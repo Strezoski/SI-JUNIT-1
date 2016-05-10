@@ -12,6 +12,7 @@ public class Test_141041 extends TestCase {
 		instance = new SI_JUNIT();
 	}
 	
+	//@Test
 	public void eParenTricifren(){
 		
 		assertTrue(instance.eParenTricifren(106));
@@ -21,6 +22,7 @@ public class Test_141041 extends TestCase {
 		assertFalse(instance.eParenTricifren(1006));
 	}
 	
+	//@Test
 	public void testBubble(){
 		int[] actual = instance.BubbleSort(new int[] {3,2,1});
 		int[] expected = new int[] {1,2,3};
