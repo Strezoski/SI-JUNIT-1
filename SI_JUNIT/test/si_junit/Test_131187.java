@@ -40,10 +40,10 @@ public class Test_131187 {
     /**
      * Test of BubbleSort method, of class SI_JUNIT.
      */
-    @Test
+    @Test(expected = NoSuchElementException.class)
     public void testBubbleSort() {
         System.out.println("---BubbleSort---");
-        int[] num = new int[5];
+        int[] num = null;
         SI_JUNIT instance = new SI_JUNIT();
         int[] expResult = new int[5];
         int[] result = instance.BubbleSort(num);
@@ -53,6 +53,8 @@ public class Test_131187 {
         } catch(NoSuchElementException e) {
             System.out.println("NoSuchElementException caught!");
         }
+        
+        num = new int[5];
         
         num[0] = 4;
         num[1] = 10;
